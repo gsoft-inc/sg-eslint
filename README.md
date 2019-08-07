@@ -1,6 +1,6 @@
 # sg-eslint
 
-Sharegate shareable ESLint configs.
+Sharegate shared ESLint config.
 
 ## Installation
 
