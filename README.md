@@ -113,7 +113,7 @@ git clone https://github.com/gsoft-inc/sg-eslint.git
 Then, install the dependencies for all the packages with Yarn:
 
 ```bash
-npm install
+yarn install
 ```
 
 Why you must use Yarn?
