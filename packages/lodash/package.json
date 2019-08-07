@@ -1,0 +1,18 @@
+{
+    "name": "@sharegate/eslint-config-lodash",
+    "version": "1.0.0",
+    "description": "Sharegate lodash ESLint config.",
+    "repository": "https://github.com/gsoft-inc/sg-eslint",
+    "author": "Groupe Sharegate inc.",
+    "license": "Apache-2.0",
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "eslint": "*"
+    },
+    "dependencies": {
+        "eslint-plugin-lodash": "*"
+    }
+}

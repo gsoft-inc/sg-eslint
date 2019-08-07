@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "name": "sg-eslint",
+    "version": "0.0.0",
+    "repository": "https://github.com/gsoft-inc/sg-eslint.git",
+    "license": "Apache-2.0",
+    "scripts": {},
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "devDependencies": {
+        "lerna": "3.16.4"
+    }
+}

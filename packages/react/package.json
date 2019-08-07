@@ -1,0 +1,20 @@
+{
+    "name": "@sharegate/eslint-config-react",
+    "version": "1.0.0",
+    "description": "Sharegate React ESLint config.",
+    "repository": "https://github.com/gsoft-inc/sg-eslint",
+    "author": "Groupe Sharegate inc.",
+    "license": "Apache-2.0",
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "babel-eslint": "*",
+        "eslint": "*"
+    },
+    "dependencies": {
+        "eslint-plugin-jsx-a11y": "*",
+        "eslint-plugin-react": "*"
+    }
+}
