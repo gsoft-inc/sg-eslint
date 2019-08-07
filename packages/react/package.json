@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-react",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Sharegate React ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",

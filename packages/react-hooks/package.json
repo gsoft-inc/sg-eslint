@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-react-hooks",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Sharegate React hooks ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
@@ -10,8 +10,8 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "*",
-        "@sharegate/eslint-config-react": "*"
+        "@sharegate/eslint-config-react": "*",
+        "eslint": "*"
     },
     "dependencies": {
         "eslint-plugin-react-hooks": "*"
