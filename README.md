@@ -6,7 +6,7 @@ Sharegate shareable ESLint configs.
 
 ### Non React App
 
-Install the recommended ESLint configuration packages with your favorite package manager.
+First, install the recommended ESLint configuration packages with your favorite package manager.
 
 With NPM:
 
@@ -25,9 +25,7 @@ To install everything with NPM:
 npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash
 ```
 
-Create a file called `.eslintrc.js` at the root of your project.
-
-Add the following configurations:
+Then, create a file called `.eslintrc.js` at the root of your project and add the following configurations:
 
 ```javascript
 module.exports = {
@@ -49,9 +47,9 @@ module.exports = {
 
 ### React App
 
-Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
+First, follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
 
-Install the React specific configuration packages with your favorite package manager.
+Then, install the React specific configuration packages with your favorite package manager.
 
 With NPM:
 
@@ -69,7 +67,7 @@ To install everything with NPM:
 npm i -D babel-eslint @sharegate/eslint-config-react @sharegate/eslint-config-react-hooks
 ```
 
-Update your existing `.eslintrc.js` configuration file:
+Finally, update your existing `.eslintrc.js` configuration file:
 
 ```javascript
 module.exports = {
@@ -85,7 +83,7 @@ module.exports = {
 
 ### VSCode
 
-[Install the ESLint extension for VSCode.](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+Install the [ESLint extension for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). The extension will provide Just In Time linting while typing in VSCode.
 
 To enable ESLint autofix **on save**, add the following configuration to your VSCode project settings:
 
@@ -102,11 +100,49 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 
 ## Maintainers
 
-The following documentation is only for the maintainers of the package.
+The following documentation is only for the maintainers of the packages.
 
-## Publish
+### Installation
 
-Dont forget about publishing philosophie
+First, clone the repository:
+
+```bash
+git clone https://github.com/gsoft-inc/sg-eslint.git
+```
+
+Then, install the dependencies for all the packages with Yarn:
+
+```bash
+npm install
+```
+
+Why you must use Yarn?
+
+Because this project is a monorepo and we leverage [yarn workspace](https://yarnpkg.com/lang/en/docs/workspaces) to manage our packages inter-dependencies.
+
+### Release
+
+This project use [Lerna](https://github.com/lerna/lerna) to facilitate the release of the packages.
+
+The packages can be released [independently](https://github.com/lerna/lerna#independent-mode). The decision to release or not a package is automatically based on wether the code of the package has changed or not.
+
+**Process**
+
+Updates of those configuration packages should batch multiple changes. Most of ESLint rules are stylistics and doesn't have an impact on the success of a project. On the other hand, frequent changes of those rules might cause friction and be a burden for the teams.
+
+Adding a new rule or updating an existing one can generate a lot of modifications to the code of an existing project. To ensure that the authors of the projects who consume those configuration packages understand the impact of updating a package, every release of a package **should be a major increment to the version number**.
+
+Every release should also contain a **release notes** that includes the new or updated rules and how to disabled / revert them manually in the consumer project when possible.
+
+**Do the actual release**
+
+To release, open a terminal at the root project of the workspace and execute the following:
+
+```bash
+yarn new-version
+yarn release
+git push
+```
 
 ## License
 
