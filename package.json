@@ -4,7 +4,11 @@
     "version": "0.0.0",
     "repository": "https://github.com/gsoft-inc/sg-eslint.git",
     "license": "Apache-2.0",
-    "scripts": {},
+    "scripts": {
+        "new-version": "lerna version --exact --no-push",
+        "release": "lerna publish from-package --exact --loglevel verbose",
+        "release:next": "yarn release --dist-tag next"
+    },
     "workspaces": {
         "packages": [
             "packages/*"
