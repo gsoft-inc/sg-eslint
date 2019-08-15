@@ -113,7 +113,7 @@ We also provides the following optionnal configurations, which can be used on to
 
 ## Maintainers
 
-The following documentation is only for the maintainers of the packages.
+The following documentation is only for the maintainers of this repository.
 
 ### Installation
 
