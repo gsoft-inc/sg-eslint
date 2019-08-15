@@ -1,6 +1,6 @@
 # sg-eslint
 
-Sharegate shared ESLint config.
+Sharegate shared [ESLint](https://eslint.org) config.
 
 ## Installation
 
@@ -117,7 +117,7 @@ The following documentation is only for the maintainers of this repository.
 
 ### Installation
 
-First, clone the repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/gsoft-inc/sg-eslint.git
