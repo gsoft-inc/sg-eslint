@@ -1,6 +1,6 @@
 # eslint-config-sort-imports
 
-Sharegate sort-imports ESLint config.
+Sharegate [sort-imports](https://www.npmjs.com/package/eslint-plugin-sort-imports-es6-autofix) ESLint config.
 
 ## License
 

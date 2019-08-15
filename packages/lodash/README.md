@@ -1,6 +1,6 @@
 # eslint-config-lodash
 
-Sharegate lodash ESLint config.
+Sharegate [lodash](https://github.com/wix/eslint-plugin-lodash) ESLint config.
 
 ## License
 

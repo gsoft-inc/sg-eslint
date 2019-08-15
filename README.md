@@ -6,7 +6,7 @@ Sharegate shared ESLint config.
 
 ### Non React App
 
-First, install the recommended ESLint configuration packages with your favorite package manager.
+Install the Sharegate recommended ESLint configuration packages.
 
 With NPM:
 
@@ -47,9 +47,9 @@ module.exports = {
 
 ### React App
 
-First, follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
+Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
 
-Then, install the React specific configuration packages with your favorite package manager.
+Then, install the React specific configuration packages.
 
 With NPM:
 
@@ -98,6 +98,19 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 }
 ```
 
+### Provided configurations
+
+The following core configurations are provided:
+
+- [recommended](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
+- [react](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/react/index.js): Use this for React projects.
+
+We also provides the following optionnal configurations, which can be used on top of the core configurations:
+
+- [sort-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/sort-imports): Use this to sort your imports with ESLint.
+- [lodash](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/lodash/index.js): Use this for projects that use lodash.
+- [react-hooks](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/react-hooks/index.js): Use this for project that use the React hooks feature.
+
 ## Maintainers
 
 The following documentation is only for the maintainers of the packages.
@@ -118,7 +131,7 @@ yarn install
 
 Why you must use Yarn?
 
-Because this project is a monorepo and we leverage [yarn workspace](https://yarnpkg.com/lang/en/docs/workspaces) to manage our packages inter-dependencies.
+Because this project is a monorepo and we leverage [yarn workspace](https://yarnpkg.com/lang/en/docs/workspaces) to manage our packages dependencies and inter-dependencies.
 
 ### Release
 
@@ -138,7 +151,7 @@ Every release should also contain a **release notes** that includes the new or u
 
 Before you release, make sure you have **write access** for all the NPM packages that will be published and that you are [logged in to NPM](https://docs.npmjs.com/logging-in-to-an-npm-enterprise-registry-from-the-command-line).
 
-To release, open a terminal at the root project of the workspace and execute the following:
+To release, open a terminal at the root project of the workspace and execute the following commands:
 
 ```bash
 yarn new-version
