@@ -5,7 +5,7 @@ module.exports = {
         "react-hooks/exhaustive-deps": "warn",
         "react-hooks/rules-of-hooks": "warn",
 
-        // https://github.com/Shopify/eslint-plugin-shopify/tree/master/lib/rules
+        // https://github.com/Shopify/eslint-plugin-shopify/tree/master/docs/rules
         "shopify/react-hooks-strict-return": "warn",
     }
 };
