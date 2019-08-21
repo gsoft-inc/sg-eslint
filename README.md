@@ -18,11 +18,12 @@ You can also optionally install the following configuration packages:
 
 - [@sharegate/eslint-config-sort-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/sort-imports)
 - [@sharegate/eslint-config-lodash](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/lodash)
+- [@sharegate/eslint-config-strict-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/strict-imports)
 
 To install everything with NPM:
 
 ```bash
-npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash
+npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict-imports
 ```
 
 Then, create a file called `.eslintrc.js` at the root of your project and add the following configurations:
@@ -33,7 +34,8 @@ module.exports = {
     extends: [
         "@sharegate/eslint-config-recommended",
         "@sharegate/eslint-config-sort-imports", /* (Optional) */
-        "@sharegate/eslint-config-lodash" /* (Optional) */
+        "@sharegate/eslint-config-lodash", /* (Optional) */
+        "@sharegate/eslint-config-strict-imports" /* (Optional) */
     ],
     parserOptions: {
         ecmaVersion: 2018
