@@ -1,8 +1,11 @@
 module.exports = {
-    plugins: ["react-hooks"],
+    plugins: ["react-hooks", "shopify"],
     rules: {
         // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
         "react-hooks/exhaustive-deps": "warn",
-        "react-hooks/rules-of-hooks": "warn"
+        "react-hooks/rules-of-hooks": "warn",
+
+        // https://github.com/Shopify/eslint-plugin-shopify/tree/master/lib/rules
+        "shopify/react-hooks-strict-return": "warn",
     }
 };
