@@ -14,7 +14,6 @@
         "eslint": "*"
     },
     "dependencies": {
-        "eslint-plugin-react-hooks": "*",
-        "eslint-plugin-shopify": "*"
+        "eslint-plugin-react-hooks": "*"
     }
 }
