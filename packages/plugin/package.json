@@ -1,0 +1,31 @@
+{
+    "name": "eslint-plugin-sharegate",
+    "version": "1.0.0",
+    "description": "Sharegate's custom ESLint plugin.",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "author": "Groupe Sharegate inc.",
+    "license": "Apache-2.0",
+    "main": "lib/index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "mocha tests --recursive"
+    },
+    "dependencies": {
+        "requireindex": "~1.1.0"
+    },
+    "peerDependencies": {
+        "eslint": "~3.9.1"
+    },
+    "devDependencies": {
+        "mocha": "^3.1.2"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    }
+}
