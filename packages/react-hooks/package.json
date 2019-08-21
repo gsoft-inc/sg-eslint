@@ -10,7 +10,7 @@
         "access": "public"
     },
     "peerDependencies": {
-        "@sharegate/eslint-config-react": "*",
+        "babel-eslint": "*",
         "eslint": "*"
     },
     "dependencies": {
