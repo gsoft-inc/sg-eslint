@@ -1,4 +1,4 @@
-# eslint-config-strict-imports
+# eslint-config-strict
 
 Sharegate React ESLint config.
 

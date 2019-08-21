@@ -1,7 +1,7 @@
 {
-    "name": "@sharegate/eslint-config-strict-imports",
+    "name": "@sharegate/eslint-config-strict",
     "version": "1.0.1",
-    "description": "Sharegate strict-imports ESLint config.",
+    "description": "Sharegate strict ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
     "license": "Apache-2.0",
