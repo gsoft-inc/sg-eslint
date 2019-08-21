@@ -28,6 +28,7 @@ module.exports = {
         "no-cond-assign": ["warn", "except-parens"],
         "no-const-assign": "warn",
         "no-control-regex": "warn",
+        "no-debugger": "warn",
         "no-delete-var": "warn",
         "no-dupe-args": "warn",
         "no-dupe-class-members": "warn",
