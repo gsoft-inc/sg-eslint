@@ -145,6 +145,7 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
         "import/no-amd": "error",
         "import/no-webpack-loader-syntax": "error",
-        "import/no-self-import": "error"
+        "import/no-self-import": "error",
+        "import/newline-after-import" : "warn",
     }
 };
