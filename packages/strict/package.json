@@ -14,7 +14,6 @@
     },
     "dependencies": {
         "eslint-plugin-import": "*",
-        "eslint-plugin-shopify": "*",
         "eslint-plugin-sharegate": "*"
     }
 }
