@@ -13,7 +13,7 @@
         "eslint": "*"
     },
     "dependencies": {
-        "eslint-plugin-import": "*",
-        "@sharegate/eslint-plugin-rules": "*"
+        "@sharegate/eslint-plugin-rules": "^1.0.0",
+        "eslint-plugin-import": "*"
     }
 }
