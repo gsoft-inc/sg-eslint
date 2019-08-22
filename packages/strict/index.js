@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ["imports", "sharegate"],
+    plugins: ["import", "sharegate"],
     rules: {
         // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
         "import/no-relative-parent-imports": "warn",
