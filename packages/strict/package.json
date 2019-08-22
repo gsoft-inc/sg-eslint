@@ -10,10 +10,10 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "*",
-        "@sharegate/eslint-plugin-rules": "*"
+        "eslint": "*"
     },
     "dependencies": {
-        "eslint-plugin-import": "*"
+        "eslint-plugin-import": "*",
+        "@sharegate/eslint-plugin-rules": "*"
     }
 }
