@@ -51,5 +51,5 @@ The following documentation is only for the maintainers of this repository.
 1. 3 files must be created,
 
 the rule's definition : packages\plugin\lib\rules\[RULE_ID].js
-the rule's test file : testpackages\plugin\tests\lib\rules\[RULE_ID].test.js
+the rule's test file : packages\plugin\tests\lib\rules\[RULE_ID].test.js
 the rule's documentation: packages\plugin\docs\rules\[RULE_ID].md
