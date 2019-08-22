@@ -14,7 +14,13 @@
         "access": "public"
     },
     "scripts": {
-        "test": "mocha tests --recursive"
+        "test": "jest"
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "collectCoverage": false
     },
     "dependencies": {
         "requireindex": "~1.1.0"
@@ -24,7 +30,7 @@
         "eslint": "~3.9.1"
     },
     "devDependencies": {
-        "mocha": "^3.1.2"
+        "jest": "^24.9.0"
     },
     "engines": {
         "node": ">=0.10.0"
