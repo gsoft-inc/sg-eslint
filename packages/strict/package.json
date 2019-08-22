@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-strict",
-    "version": "1.0.4",
+    "version": "1.0.0",
     "description": "Sharegate strict ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
@@ -11,7 +11,7 @@
     },
     "peerDependencies": {
         "eslint": "*",
-        "eslint-plugin-sharegate": "*"
+        "@sharegate/eslint-plugin-rules": "*"
     },
     "dependencies": {
         "eslint-plugin-import": "*"
