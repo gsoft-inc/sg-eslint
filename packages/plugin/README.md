@@ -24,12 +24,9 @@ Add `sharegate` to the plugins section of your `.eslintrc` configuration file. Y
 
 ```json
 {
-    "plugins": [
-        "sharegate"
-    ]
+    "plugins": ["sharegate"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
@@ -43,29 +40,16 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
+-   Fill in provided rules here
 
 ## Maintainers
 
 The following documentation is only for the maintainers of this repository.
 
-## Tooling
-
-You must install Yeoman and generator-eslint
-
-npm install -g yo
-npm install -g generator-eslint
-
 ## Rule Creation
 
-1. Navigate to the sg-eslint\packages\plugin folder
-2. In Powershell, enter the following command : yo eslint:rule
+1. 3 files must be created,
 
-```
-? What is your name? ...
-? Where will this rule be published? ESLint Plugin
-? What is the rule ID? prefer-cx             (Make sure you follow the following naming convention: https://eslint.org/docs/developer-guide/working-with-rules#rule-naming-conventions)
-? Type a short description of this rule: ...
-? Type a short example of the code that will fail: import classnames from "classnames";
-```
-
+the rule's definition : packages\plugin\lib\rules\[RULE_ID].js
+the rule's test file : testpackages\plugin\tests\lib\rules\[RULE_ID].test.js
+the rule's documentation: packages\plugin\docs\rules\[RULE_ID].md
