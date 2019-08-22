@@ -13,24 +13,12 @@
     "publishConfig": {
         "access": "public"
     },
-    "scripts": {
-        "test": "jest"
-    },
-    "jest": {
-        "testPathIgnorePatterns": [
-            "/node_modules/"
-        ],
-        "collectCoverage": false
-    },
     "dependencies": {
         "requireindex": "~1.1.0"
     },
     "peerDependencies": {
         "babel-eslint": "*",
         "eslint": "~3.9.1"
-    },
-    "devDependencies": {
-        "jest": "^24.9.0"
     },
     "engines": {
         "node": ">=0.10.0"
