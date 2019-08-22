@@ -1,4 +1,4 @@
-# eslint-config-recommended
+# eslint-config-react-hooks (deprecated)
 
 Sharegate recommended ESLint config.
 
