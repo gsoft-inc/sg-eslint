@@ -15,14 +15,8 @@
             "packages/*"
         ]
     },
-    "jest": {
-        "testPathIgnorePatterns": [
-            "/node_modules/"
-        ],
-        "collectCoverage": false
-    },
     "devDependencies": {
         "lerna": "3.16.4",
-        "jest": "^24.9.0"
+        "jest": "24.9.0"
     }
 }

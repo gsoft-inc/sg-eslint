@@ -2,11 +2,6 @@
     "name": "@sharegate/eslint-plugin-rules",
     "version": "1.0.0",
     "description": "Sharegate's custom ESLint plugin.",
-    "keywords": [
-        "eslint",
-        "eslintplugin",
-        "eslint-plugin"
-    ],
     "author": "Groupe Sharegate inc.",
     "license": "Apache-2.0",
     "main": "lib/index.js",
@@ -18,7 +13,7 @@
     },
     "peerDependencies": {
         "babel-eslint": "*",
-        "eslint": "~3.9.1"
+        "eslint": "*"
     },
     "engines": {
         "node": ">=0.10.0"

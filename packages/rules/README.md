@@ -1,39 +1,23 @@
 # @sharegate/eslint-plugin-rules
 
-Sharegate&#39;s custom ESLint plugin.
-
-## Installation
-
-You'll first need to install [ESLint](http://eslint.org):
-
-```
-$ npm i eslint --save-dev
-```
-
-Next, install `@sharegate/eslint-plugin-rules`:
-
-```
-$ npm install @sharegate/eslint-plugin-rules --save-dev
-```
-
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@sharegate/eslint-plugin-rules` globally.
+Sharegate's custom ESLint plugin.
 
 ## Usage
 
-Add `sharegate` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add the sharegate rules plugin to your .eslintrc configuration file.
 
-```json
+```javascript
 {
-    "plugins": ["@sharegate/rules"]
+    plugins: ["@sharegate/rules"]
 }
 ```
 
 Then configure the rules you want to use under the rules section.
 
-```json
+```javascript
 {
-    "rules": {
-        "@sharegate/rules/rule-name": 2
+    rules: {
+        "@sharegate/rules/rule-name": "warn"
     }
 }
 ```

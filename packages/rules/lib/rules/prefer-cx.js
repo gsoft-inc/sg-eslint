@@ -1,12 +1,4 @@
-/**
- * @fileoverview Prefer cx over classnames as the name of classnames imports.
- * @author Alexandre Asselin
- */
 "use strict";
-
-//------------------------------------------------------------------------------
-// Rule Definition
-//------------------------------------------------------------------------------
 
 module.exports = {
     meta: {

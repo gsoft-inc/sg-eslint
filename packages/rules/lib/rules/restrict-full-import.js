@@ -1,12 +1,5 @@
-/**
- * @fileoverview Prevent importing the entirety of a package.
- * @author Alexandre Asselin
- */
 "use strict";
 
-//------------------------------------------------------------------------------
-// Rule Definition
-//------------------------------------------------------------------------------
 module.exports = {
     meta: {
         docs: {

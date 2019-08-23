@@ -1,6 +1,6 @@
 # eslint-config-strict
 
-Sharegate React ESLint config.
+Sharegate's strict ESLint config.
 
 ## License
 

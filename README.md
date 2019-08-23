@@ -16,14 +16,14 @@ npm i -D eslint @sharegate/eslint-config-recommended
 
 You can also optionally install the following configuration packages:
 
--   [@sharegate/eslint-config-sort-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/sort-imports)
--   [@sharegate/eslint-config-lodash](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/lodash)
--   [@sharegate/eslint-config-strict](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/strict)
+- [@sharegate/eslint-config-sort-imports](/packages/sort-imports)
+- [@sharegate/eslint-config-lodash](/packages/lodash)
+- [@sharegate/eslint-config-strict](/packages/strict)
 
 To install everything with NPM:
 
 ```bash
-npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict-imports
+npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict
 ```
 
 Then, create a file called `.eslintrc.js` at the root of your project and add the following configurations:
@@ -93,13 +93,14 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 
 The following core configurations are provided:
 
--   [recommended](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
--   [react](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/react/index.js): Use this for React projects.
+- [recommended](/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
+- [react](/packages/react/index.js): Use this for React projects.
 
 We also provides the following optionnal configurations, which can be used on top of the core configurations:
 
--   [sort-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/sort-imports): Use this to sort your imports with ESLint.
--   [lodash](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/lodash/index.js): Use this for projects that use lodash.
+- [sort-imports](/packages/sort-imports): Use this to sort your imports with ESLint.
+- [lodash](/packages/lodash/index.js): Use this for projects that use lodash.
+- [strict](/packages/strict/index.js): Use this for projects that wants to prohibits some syntax.
 
 ## Maintainers
 
