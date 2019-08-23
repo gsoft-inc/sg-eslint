@@ -34,4 +34,4 @@ In order to create a new rule, you must manually create 3 new files :
 - the rule's test file : packages\plugin\tests\lib\rules\[RULE_ID].test.js
 - the rule's documentation: packages\plugin\docs\rules\[RULE_ID].md
 
-And add the rule's documentation in the workspace's [README](../../README.md).
+And add the rule's documentation in the workspace's [README](../../README.md) in the Plugin-Provided Rules section.

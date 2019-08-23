@@ -102,6 +102,13 @@ We also provides the following optionnal configurations, which can be used on to
 - [lodash](/packages/lodash/index.js): Use this for projects that use lodash.
 - [strict](/packages/strict/index.js): Use this for projects that wants to prohibits some syntax.
 
+### Plugin-Provided Rules
+
+Sharegate's plugin provides the following custom rules, which are included as appropriate in all core linting configs:
+
+- [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
+- [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
+
 ## Maintainers
 
 The following documentation is only for the maintainers of this repository.
@@ -149,13 +156,6 @@ yarn new-version
 yarn release
 git push
 ```
-
-## Plugin-Provided Rules
-
-Sharegate's plugin provides the following custom rules, which are included as appropriate in all core linting configs:
-
-- [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
-- [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
 
 ## License
 
