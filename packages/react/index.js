@@ -1,6 +1,6 @@
 module.exports = {
     parser: "babel-eslint",
-    plugins: ["jsx-a11y", "react"],
+    plugins: ["jsx-a11y", "react", "react-hooks"],
     parserOptions: {
         sourceType: "module",
         ecmaFeatures: {
