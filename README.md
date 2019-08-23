@@ -150,6 +150,13 @@ yarn release
 git push
 ```
 
+## Plugin-Provided Rules
+
+Sharegate's plugin provides the following custom rules, which are included as appropriate in all core linting configs:
+
+- [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
+- [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
+
 ## License
 
 Copyright © 2019, Groupe Sharegate inc. This code is licensed under the Apache License, Version 2.0. You may obtain a copy of this license at https://github.com/gsoft-inc/gsoft-license/blob/master/LICENSE.
