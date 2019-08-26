@@ -1,7 +1,7 @@
 {
-    "name": "@sharegate/eslint-config-react-hooks",
-    "version": "1.0.1",
-    "description": "Sharegate React hooks ESLint config.",
+    "name": "@sharegate/eslint-config-strict",
+    "version": "1.0.0",
+    "description": "Sharegate strict ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
     "license": "Apache-2.0",
@@ -10,10 +10,10 @@
         "access": "public"
     },
     "peerDependencies": {
-        "@sharegate/eslint-config-react": "*",
         "eslint": "*"
     },
     "dependencies": {
-        "eslint-plugin-react-hooks": "*"
+        "@sharegate/eslint-plugin-rules": "1.0.0",
+        "eslint-plugin-import": "*"
     }
 }

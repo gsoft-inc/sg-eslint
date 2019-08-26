@@ -16,13 +16,14 @@ npm i -D eslint @sharegate/eslint-config-recommended
 
 You can also optionally install the following configuration packages:
 
-- [@sharegate/eslint-config-sort-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/sort-imports)
-- [@sharegate/eslint-config-lodash](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/lodash)
+- [@sharegate/eslint-config-sort-imports](/packages/sort-imports)
+- [@sharegate/eslint-config-lodash](/packages/lodash)
+- [@sharegate/eslint-config-strict](/packages/strict)
 
 To install everything with NPM:
 
 ```bash
-npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash
+npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict
 ```
 
 Then, create a file called `.eslintrc.js` at the root of your project and add the following configurations:
@@ -32,8 +33,9 @@ module.exports = {
     root: true,
     extends: [
         "@sharegate/eslint-config-recommended",
-        "@sharegate/eslint-config-sort-imports", /* (Optional) */
-        "@sharegate/eslint-config-lodash" /* (Optional) */
+        "@sharegate/eslint-config-sort-imports" /* (Optional) */,
+        "@sharegate/eslint-config-lodash" /* (Optional) */,
+        "@sharegate/eslint-config-strict" /* (Optional) */
     ],
     parserOptions: {
         ecmaVersion: 2018
@@ -57,16 +59,6 @@ With NPM:
 npm i -D babel-eslint @sharegate/eslint-config-react
 ```
 
-You can also optionally install the following configuration packages:
-
-- [@sharegate/eslint-config-react-hooks](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/react-hooks)
-
-To install everything with NPM:
-
-```bash
-npm i -D babel-eslint @sharegate/eslint-config-react @sharegate/eslint-config-react-hooks
-```
-
 Finally, update your existing `.eslintrc.js` configuration file:
 
 ```javascript
@@ -75,7 +67,6 @@ module.exports = {
     extends: [
         ...
         "@sharegate/eslint-config-react",
-        "@sharegate/eslint-config-react-hooks", /* (Optional) */
     ],
     ...
 };
@@ -102,14 +93,21 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 
 The following core configurations are provided:
 
-- [recommended](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
-- [react](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/react/index.js): Use this for React projects.
+- [recommended](/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
+- [react](/packages/react/index.js): Use this for React projects.
 
 We also provides the following optionnal configurations, which can be used on top of the core configurations:
 
-- [sort-imports](https://github.com/gsoft-inc/sg-eslint/tree/master/packages/sort-imports): Use this to sort your imports with ESLint.
-- [lodash](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/lodash/index.js): Use this for projects that use lodash.
-- [react-hooks](https://github.com/gsoft-inc/sg-eslint/blob/master/packages/react-hooks/index.js): Use this for project that use the React hooks feature.
+- [sort-imports](/packages/sort-imports): Use this to sort your imports with ESLint.
+- [lodash](/packages/lodash/index.js): Use this for projects that use lodash.
+- [strict](/packages/strict/index.js): Use this for projects that wants to prohibits some syntax.
+
+### Plugin-Provided Rules
+
+Sharegate's plugin provides the following custom rules, which are included as appropriate in all core linting configs:
+
+- [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
+- [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
 
 ## Maintainers
 

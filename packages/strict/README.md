@@ -1,6 +1,6 @@
-# eslint-config-recommended
+# eslint-config-strict
 
-Sharegate recommended ESLint config.
+Sharegate's strict ESLint config.
 
 ## License
 

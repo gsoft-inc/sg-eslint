@@ -1,6 +1,6 @@
 module.exports = {
     parser: "babel-eslint",
-    plugins: ["jsx-a11y", "react"],
+    plugins: ["jsx-a11y", "react", "react-hooks"],
     parserOptions: {
         sourceType: "module",
         ecmaFeatures: {
@@ -86,6 +86,10 @@ module.exports = {
         "jsx-a11y/no-redundant-roles": "warn",
         "jsx-a11y/role-has-required-aria-props": "warn",
         "jsx-a11y/role-supports-aria-props": "warn",
-        "jsx-a11y/scope": "warn"
+        "jsx-a11y/scope": "warn",
+
+        // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "warn"
     }
 };

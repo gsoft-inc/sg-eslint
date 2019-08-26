@@ -28,6 +28,7 @@ module.exports = {
         "no-cond-assign": ["warn", "except-parens"],
         "no-const-assign": "warn",
         "no-control-regex": "warn",
+        "no-debugger": "warn",
         "no-delete-var": "warn",
         "no-dupe-args": "warn",
         "no-dupe-class-members": "warn",
@@ -144,6 +145,7 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
         "import/no-amd": "error",
         "import/no-webpack-loader-syntax": "error",
-        "import/no-self-import": "error"
+        "import/no-self-import": "error",
+        "import/newline-after-import" : "warn",
     }
 };

@@ -7,7 +7,8 @@
     "scripts": {
         "new-version": "lerna version --exact --no-push",
         "release": "lerna publish from-package --exact --loglevel verbose",
-        "release:next": "yarn release --dist-tag next"
+        "release:next": "yarn release --dist-tag next",
+        "test": "jest"
     },
     "workspaces": {
         "packages": [
@@ -15,6 +16,7 @@
         ]
     },
     "devDependencies": {
-        "lerna": "3.16.4"
+        "lerna": "3.16.4",
+        "jest": "24.9.0"
     }
 }
