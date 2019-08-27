@@ -155,6 +155,8 @@ To release, open a terminal at the root project of the workspace and execute the
 yarn new-version
 yarn release
 git push
+git tag [CURRENT_DATE]
+git push origin [CURRENT_DATE]
 ```
 
 ## License
