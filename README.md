@@ -159,6 +159,8 @@ git tag [yyyy-MM-dd]
 git push origin [yyyy-MM-dd]
 ```
 
+Once you released the packages, create a [Github release](https://github.com/gsoft-inc/sg-eslint/releases) for the Git tag [yyyy-MM-dd] and list all the changes that has been published.
+
 ## License
 
 Copyright © 2019, Groupe Sharegate inc. This code is licensed under the Apache License, Version 2.0. You may obtain a copy of this license at https://github.com/gsoft-inc/gsoft-license/blob/master/LICENSE.
