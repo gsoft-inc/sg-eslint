@@ -26,7 +26,7 @@ Then configure the rules you want to use under the rules section.
 
 The following documentation is only for the maintainers of this repository.
 
-## Rule Creation
+### Rule Creation
 
 In order to create a new rule, you must manually create 3 new files :
 
