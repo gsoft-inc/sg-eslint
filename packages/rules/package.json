@@ -9,7 +9,7 @@
         "access": "public"
     },
     "dependencies": {
-        "requireindex": "~1.1.0"
+        "requireindex": "1.2.0"
     },
     "peerDependencies": {
         "babel-eslint": "*",
