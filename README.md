@@ -154,14 +154,10 @@ To release, open a terminal at the root project of the workspace and execute the
 ```bash
 yarn new-version
 yarn release:pkg
-git push
-git tag -a [yyyy-MM-dd] -m "[yyyy-MM-dd]"
-git push origin [yyyy-MM-dd]
+yarn push-release <yyyy-MM-dd>
 ```
 
-**To tag the version, use the [Git annotated tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging) syntax as shown in the instructions. Without a proper annotated tag, Lerna will not be able to determine which packages changed the next time you release.**
-
-After you released the packages, create a [Github release](https://github.com/gsoft-inc/sg-eslint/releases) for the Git tag [yyyy-MM-dd] and list all the changes that has been published.
+After you released the packages, create a [Github release](https://github.com/gsoft-inc/sg-eslint/releases) for the Git annotated tag [yyyy-MM-dd] created earlier by the `push-release` command and list all the changes that has been published.
 
 Dont forget to **publish** the release.
 

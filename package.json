@@ -6,9 +6,12 @@
     "license": "Apache-2.0",
     "scripts": {
         "new-version": "lerna version --exact --no-push",
+        "force-new-version": "yarn new-version --force-publish",
+        "push-release": "node scripts/push-release",
         "release": "lerna publish from-package --exact --loglevel verbose",
         "release:next": "yarn release --dist-tag next",
-        "test": "jest"
+        "test": "jest",
+        "diff": "lerna diff"
     },
     "workspaces": {
         "packages": [
@@ -17,6 +20,9 @@
     },
     "devDependencies": {
         "lerna": "3.16.4",
-        "jest": "24.9.0"
+        "jest": "24.9.0",
+        "meow": "5.0.0",
+        "chalk": "2.4.2",
+        "shelljs": "0.8.3"
     }
 }
