@@ -1,12 +1,12 @@
 # sg-eslint
 
-Sharegate shared [ESLint](https://eslint.org) config.
+ShareGate shared [ESLint](https://eslint.org) config.
 
 ## Installation
 
 ### Non React App
 
-Install the Sharegate recommended ESLint configuration packages.
+Install the ShareGate recommended ESLint configuration packages.
 
 With NPM:
 
