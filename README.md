@@ -108,6 +108,8 @@ Sharegate's plugin provides the following custom rules, which are included as ap
 
 - [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
 - [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
+- [semantic-ui-button-has-type](packages/rules/docs/rules/semantic-ui-button-has-type.md): Prevent usage of Semantic UI's `Button` elements without an explicit `type` attribute.
+- [strict-css-modules-names](packages/rules/docs/rules/strict-css-modules-names.md): CSS modules should have the same file name (minus the file extension) as the scoped component and be located in the same folder.
 
 ## Maintainers
 
