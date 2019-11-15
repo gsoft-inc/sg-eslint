@@ -16,14 +16,15 @@ npm i -D eslint @sharegate/eslint-config-recommended
 
 You can also optionally install the following configuration packages:
 
-- [@sharegate/eslint-config-sort-imports](/packages/sort-imports)
-- [@sharegate/eslint-config-lodash](/packages/lodash)
-- [@sharegate/eslint-config-strict](/packages/strict)
+-   [@sharegate/eslint-config-sort-imports](/packages/sort-imports)
+-   [@sharegate/eslint-config-lodash](/packages/lodash)
+-   [@sharegate/eslint-config-strict](/packages/strict)
+-   [@sharegate/eslint-config-typescript](/packages/typescript)
 
 To install everything with NPM:
 
 ```bash
-npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict
+npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict @sharegate/eslint-config-typescript
 ```
 
 Then, create a file called `.eslintrc.js` at the root of your project and add the following configurations:
@@ -36,6 +37,7 @@ module.exports = {
         "@sharegate/eslint-config-sort-imports" /* (Optional) */,
         "@sharegate/eslint-config-lodash" /* (Optional) */,
         "@sharegate/eslint-config-strict" /* (Optional) */
+        "@sharegate/eslint-config-typescript" /* (Optional) */
     ],
     parserOptions: {
         ecmaVersion: 2018
@@ -93,23 +95,24 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 
 The following core configurations are provided:
 
-- [recommended](/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
-- [react](/packages/react/index.js): Use this for React projects.
+-   [recommended](/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
+-   [react](/packages/react/index.js): Use this for React projects.
 
 We also provides the following optionnal configurations, which can be used on top of the core configurations:
 
-- [sort-imports](/packages/sort-imports): Use this to sort your imports with ESLint.
-- [lodash](/packages/lodash/index.js): Use this for projects that use lodash.
-- [strict](/packages/strict/index.js): Use this for projects that wants to prohibits some syntax.
+-   [sort-imports](/packages/sort-imports): Use this to sort your imports with ESLint.
+-   [lodash](/packages/lodash/index.js): Use this for projects that use lodash.
+-   [strict](/packages/strict/index.js): Use this for projects that wants to prohibits some syntax.
+-   [typescript](/packages/typescript/index.js): Use this for projects that use typescript.
 
 ### Plugin-Provided Rules
 
 Sharegate's plugin provides the following custom rules, which are included as appropriate in all core linting configs:
 
-- [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
-- [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
-- [semantic-ui-button-has-type](packages/rules/docs/rules/semantic-ui-button-has-type.md): Prevent usage of Semantic UI's `Button` elements without an explicit `type` attribute.
-- [strict-css-modules-names](packages/rules/docs/rules/strict-css-modules-names.md): CSS modules should have the same file name (minus the file extension) as the scoped component and be located in the same folder.
+-   [prefer-cx](packages/rules/docs/rules/prefer-cx.md): Prefer cx over classnames as the name of classnames imports.
+-   [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
+-   [semantic-ui-button-has-type](packages/rules/docs/rules/semantic-ui-button-has-type.md): Prevent usage of Semantic UI's `Button` elements without an explicit `type` attribute.
+-   [strict-css-modules-names](packages/rules/docs/rules/strict-css-modules-names.md): CSS modules should have the same file name (minus the file extension) as the scoped component and be located in the same folder.
 
 ## Maintainers
 

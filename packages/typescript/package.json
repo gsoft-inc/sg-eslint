@@ -1,0 +1,18 @@
+{
+    "name": "@sharegate/eslint-config-typescript",
+    "version": "1.0.0",
+    "description": "Sharegate's typescript ESLint config.",
+    "repository": "https://github.com/gsoft-inc/sg-eslint",
+    "author": "Groupe Sharegate inc.",
+    "license": "Apache-2.0",
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "eslint": "*"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "2.7.0"
+    }
+}
