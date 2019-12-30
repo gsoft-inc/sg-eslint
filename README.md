@@ -143,7 +143,7 @@ The packages can be released [independently](https://github.com/lerna/lerna#inde
 
 Updates to these configuration packages should batch multiple changes. Most of ESLint rules are stylistics and doesn't have an impact on the success of a project. On the other hand, frequent changes of those rules might cause friction and be a burden for the teams.
 
-Adding a new rule or updating an existing one can generate a lot of modifications to the code of an existing project. To ensure that the authors of the projects understand the impact of updating, every release of a package **should be a major increment to the version number**.
+Adding a new rule or updating an existing one can generate a lot of modifications to the code of an existing project. To ensure that the consumers understand the impact of updating these packages, every release **should be a major increment to the version number**.
 
 Every release should also contain a **release notes** that includes the new or updated rules and how to disabled / revert them manually in the consumer project when possible.
 
