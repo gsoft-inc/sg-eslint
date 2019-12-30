@@ -151,7 +151,7 @@ Every release should also contain a **release notes** that includes the new or u
 
 Before you release, make sure you have **write access** for all the NPM packages that will be published and that you are [logged in to NPM](https://docs.npmjs.com/logging-in-to-an-npm-enterprise-registry-from-the-command-line).
 
-To release, open a terminal at the root project of the workspace and execute the following commands:
+To release, open a terminal at the root of the project and execute the following commands:
 
 ```bash
 yarn new-version
