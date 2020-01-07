@@ -91,7 +91,7 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 }
 ```
 
-This is also strongly recommended that you had a `.prettierignore` file at the root of your project with `*` as content to prevent any conflict between eslint and Prettier for user who have the Prettier VSCode extension installed:
+This is also strongly recommended that you had a `.prettierignore` file at the root of your project with `*` as content to prevent any conflict between ESLint and Prettier for user who have the Prettier VSCode extension installed:
 
 ```javascript
 // .prettierignore
