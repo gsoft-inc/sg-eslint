@@ -123,6 +123,7 @@ Sharegate's plugin provides the following custom rules, which are included as ap
 - [restrict-full-import](packages/rules/docs/rules/restrict-full-import.md): Prevent importing the entirety of a package.
 - [semantic-ui-button-has-type](packages/rules/docs/rules/semantic-ui-button-has-type.md): Prevent usage of Semantic UI's `Button` elements without an explicit `type` attribute.
 - [strict-css-modules-names](packages/rules/docs/rules/strict-css-modules-names.md): CSS modules should have the same file name (minus the file extension) as the scoped component and be located in the same folder.
+- [prefer-orbit-ui-components](packages/rules/docs/rules/prefer-orbit-ui-components.md):  Prefer Orbit UI React components over Semantic UI React components.
 
 ## Maintainers
 
