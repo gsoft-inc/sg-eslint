@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
-const rule = require("../../../lib/rules/prefer-orbit-components"),
+const rule = require("../../../lib/rules/prefer-orbit-ui-components"),
     RuleTester = require("eslint").RuleTester;
 
 //------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ const parserOptions = {
     }
 };
 
-ruleTester.run("prefer-orbit-components", rule, {
+ruleTester.run("prefer-orbit-ui-components", rule, {
     valid: [
         {
             code: `
@@ -46,7 +46,7 @@ ruleTester.run("prefer-orbit-components", rule, {
             `,
             errors: [
                 {
-                    message: "You should use the component \"Button\" from @orbit-ui instead of the one from semantic-ui-react. The orbit documentation can be found here: https://sg-orbit.netlify.com"
+                    message: "You should use the component \"Button\" from @orbit-ui instead of the one from semantic-ui-react. The Orbit UI documentation can be found here: https://sg-orbit.netlify.com"
                 }
             ],
             parserOptions
@@ -57,7 +57,7 @@ ruleTester.run("prefer-orbit-components", rule, {
             `,
             errors: [
                 {
-                    message: "You should use the component \"Label\" from @orbit-ui instead of the one from semantic-ui-react. The orbit documentation can be found here: https://sg-orbit.netlify.com"
+                    message: "You should use the component \"Label\" from @orbit-ui instead of the one from semantic-ui-react. The Orbit UI documentation can be found here: https://sg-orbit.netlify.com"
                 }
             ],
             parserOptions

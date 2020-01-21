@@ -1,6 +1,6 @@
-# Prefer orbit components over semantic-ui-react components. (prefer-orbit-components)
+# Prefer Orbit UI React components over Semantic UI React components. (prefer-orbit-ui-components)
 
-Some semantic-ui-react components are wrapped by orbit. They should be used instead of the ones from semantic-ui-react.
+Some Semantic UI React components are wrapped by Orbit UI. They should be used instead of the ones from Semantic UI React.
 
 ## Rule Details
 
@@ -24,4 +24,4 @@ import { Dropdown } from "semantic-ui-react"
 
 ## When Not To Use It
 
-If you are not using orbit or if you don't want to enforce the usage of orbit components.
+If you are not using Orbit UI or if you don't want to enforce the usage of Orbit UI React components.

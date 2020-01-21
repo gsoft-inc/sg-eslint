@@ -6,7 +6,7 @@ module.exports = {
     meta: {
         docs: {
             description:
-                "Prefer orbit components over semantic-ui-react components.",
+                "Prefer Orbit UI React components over Semantic UI React components.",
             category: "Strict Imports",
             recommended: false
         },
@@ -28,7 +28,7 @@ module.exports = {
                     if (BannedComponents.findIndex(x => x === specifier.local.name) !== -1) {
                         context.report(
                             node,
-                            `You should use the component \"${specifier.local.name}\" from @orbit-ui instead of the one from semantic-ui-react. The orbit documentation can be found here: https://sg-orbit.netlify.com`
+                            `You should use the component \"${specifier.local.name}\" from @orbit-ui instead of the one from semantic-ui-react. The Orbit UI documentation can be found here: https://sg-orbit.netlify.com`
                         );
                     }
                 });
