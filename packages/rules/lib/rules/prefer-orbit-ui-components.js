@@ -1,6 +1,6 @@
 "use strict";
 
-const BannedComponents = ["Button", "Label"]
+const BannedComponents = ["Button", "Label", "Input"]
 
 module.exports = {
     meta: {
