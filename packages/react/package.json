@@ -10,12 +10,12 @@
         "access": "public"
     },
     "peerDependencies": {
-        "babel-eslint": "*",
-        "eslint": "*"
+        "babel-eslint": "^10",
+        "eslint": "^3 || ^4 || ^5 || ^6"
     },
     "dependencies": {
-        "eslint-plugin-jsx-a11y": "*",
-        "eslint-plugin-react": "*",
-        "eslint-plugin-react-hooks": "*"
+        "eslint-plugin-jsx-a11y": "6.2.3",
+        "eslint-plugin-react": "7.14.3",
+        "eslint-plugin-react-hooks": "2.0.1"
     }
 }
