@@ -12,8 +12,8 @@
         "requireindex": "1.2.0"
     },
     "peerDependencies": {
-        "babel-eslint": "*",
-        "eslint": "*"
+        "babel-eslint": "^10",
+        "eslint": "^6 || ^7"
     },
     "engines": {
         "node": ">=0.10.0"

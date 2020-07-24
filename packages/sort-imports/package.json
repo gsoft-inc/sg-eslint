@@ -10,9 +10,9 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "*"
+        "eslint": "^6 || ^7"
     },
     "dependencies": {
-        "eslint-plugin-sort-imports-es6-autofix": "*"
+        "eslint-plugin-sort-imports-es6-autofix": "0.5.0"
     }
 }

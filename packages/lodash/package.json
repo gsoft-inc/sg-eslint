@@ -10,9 +10,10 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "*"
+        "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7",
+        "lodash": "^4"
     },
     "dependencies": {
-        "eslint-plugin-lodash": "*"
+        "eslint-plugin-lodash": "7.1.0"
     }
 }
