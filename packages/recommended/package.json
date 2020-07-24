@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-recommended",
-    "version": "1.1.0",
+    "version": "1.1.1-beta.0",
     "description": "Sharegate recommended ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
