@@ -14,5 +14,6 @@
     },
     "dependencies": {
         "eslint-plugin-import": "2.22.0"
-    }
+    },
+    "gitHead": "89047b55505c8a89ce18420b7b015308dfa54aaf"
 }
