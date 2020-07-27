@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-lodash",
-    "version": "1.0.3-beta.0",
+    "version": "1.0.3",
     "description": "Sharegate lodash ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
