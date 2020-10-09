@@ -40,8 +40,8 @@ module.exports = {
     extends: [
         "@sharegate/eslint-config-recommended", /* (If your project is in native JavaScript) */
         "@sharegate/eslint-config-typescript", /* (If your project is in TypeScript) */
-        "@sharegate/eslint-config-sort-imports" /* (Optional) */,
-        "@sharegate/eslint-config-lodash" /* (Optional) */,
+        "@sharegate/eslint-config-sort-imports", /* (Optional) */
+        "@sharegate/eslint-config-lodash", /* (Optional) */
         "@sharegate/eslint-config-strict" /* (Optional) */
     ],
     parserOptions: {
