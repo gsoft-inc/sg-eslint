@@ -8,10 +8,16 @@ ShareGate shared [ESLint](https://eslint.org) config.
 
 Install the ShareGate recommended ESLint configuration packages.
 
-With NPM:
+For a native JavaScript project:
 
 ```bash
 npm i -D eslint @sharegate/eslint-config-recommended
+```
+
+For a TypeScript project:
+
+```bash
+npm i -D eslint @sharegate/eslint-config-typescript
 ```
 
 You can also optionally install the following configuration packages:
@@ -20,7 +26,7 @@ You can also optionally install the following configuration packages:
 - [@sharegate/eslint-config-lodash](/packages/lodash)
 - [@sharegate/eslint-config-strict](/packages/strict)
 
-To install everything with NPM:
+To install everything:
 
 ```bash
 npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict
@@ -32,7 +38,8 @@ Then, create a file called `.eslintrc.js` at the root of your project and add th
 module.exports = {
     root: true,
     extends: [
-        "@sharegate/eslint-config-recommended",
+        "@sharegate/eslint-config-recommended", /* (If your project is in native JavaScript) */
+        "@sharegate/eslint-config-typescript", /* (If your project is in TypeScript) */
         "@sharegate/eslint-config-sort-imports" /* (Optional) */,
         "@sharegate/eslint-config-lodash" /* (Optional) */,
         "@sharegate/eslint-config-strict" /* (Optional) */
@@ -51,9 +58,7 @@ module.exports = {
 
 Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
 
-Then, install the React specific configuration packages.
-
-With NPM:
+Then, install the React specific configuration packages:
 
 ```bash
 npm i -D babel-eslint @sharegate/eslint-config-react
@@ -85,9 +90,7 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
     "javascript.validate.enable": true,
     "json.format.enable": false,
     "eslint.alwaysShowStatus": true
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 }
 ```
 
@@ -107,7 +110,10 @@ This is also strongly recommended that you had a `.prettierignore` file at the r
 The following core configurations are provided:
 
 - [recommended](/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
+- [typescript](/packages/typescript/index.js): Use this for anything written in TypeScript.
 - [react](/packages/react/index.js): Use this for React projects.
+
+> The **typescript** config extends the **recommended** config, you shouldn't have to include both.
 
 We also provides the following optionnal configurations, which can be used on top of the core configurations:
 
