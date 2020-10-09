@@ -85,11 +85,18 @@ To enable ESLint autofix **on save**, add the following configuration to your VS
 
 ```javascript
 {
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": false
+    },
     "editor.formatOnSave": true,
+    "[html]": {
+        "editor.formatOnSave": false
+    },
     "javascript.format.enable": false,
     "javascript.validate.enable": true,
     "json.format.enable": false,
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
     "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 }
 ```
