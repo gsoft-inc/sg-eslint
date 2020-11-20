@@ -1,5 +1,5 @@
 module.exports = {
-    parser: "babel-eslint",
+    parser: "@babel/eslint-parser",
     plugins: ["jsx-a11y", "react", "react-hooks"],
     parserOptions: {
         sourceType: "module",
