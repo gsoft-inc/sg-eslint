@@ -10,10 +10,10 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7"
+        "eslint": "^6 || ^7"
     },
     "dependencies": {
-        "eslint-plugin-import": "2.22.0"
+        "eslint-plugin-import": "*"
     },
     "gitHead": "89047b55505c8a89ce18420b7b015308dfa54aaf"
 }

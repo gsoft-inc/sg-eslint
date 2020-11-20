@@ -10,11 +10,11 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7",
-        "lodash": "^4"
+        "eslint": "^6 || ^7",
+        "lodash": "*"
     },
     "dependencies": {
-        "eslint-plugin-lodash": "7.1.0"
+        "eslint-plugin-lodash": "*"
     },
     "gitHead": "89047b55505c8a89ce18420b7b015308dfa54aaf"
 }
