@@ -13,7 +13,7 @@
         "eslint": "^6 || ^7"
     },
     "dependencies": {
-        "@sharegate/eslint-plugin-rules": "1.3.0",
+        "@sharegate/eslint-plugin-rules": "1.3.2",
         "eslint-plugin-import": "*"
     },
     "gitHead": "89047b55505c8a89ce18420b7b015308dfa54aaf"
