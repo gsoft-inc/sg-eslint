@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-typescript",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Sharegate TypeScript ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
