@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-react",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Sharegate React ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
@@ -14,11 +14,11 @@
         "eslint": "^6 || ^7"
     },
     "dependencies": {
+        "@sharegate/eslint-config-recommended": "*",
+        "@sharegate/eslint-config-sort-imports": "*",
         "eslint-plugin-jsx-a11y": "*",
         "eslint-plugin-react": "*",
-        "eslint-plugin-react-hooks": "*",
-        "@sharegate/eslint-config-recommended": "*",
-        "@sharegate/eslint-config-sort-imports": "*"
+        "eslint-plugin-react-hooks": "*"
     },
     "gitHead": "89047b55505c8a89ce18420b7b015308dfa54aaf"
 }
