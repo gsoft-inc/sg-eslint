@@ -16,7 +16,9 @@
     "dependencies": {
         "eslint-plugin-jsx-a11y": "*",
         "eslint-plugin-react": "*",
-        "eslint-plugin-react-hooks": "*"
+        "eslint-plugin-react-hooks": "*",
+        "@sharegate/eslint-config-recommended": "*",
+        "@sharegate/eslint-config-sort-imports": "*"
     },
     "gitHead": "89047b55505c8a89ce18420b7b015308dfa54aaf"
 }
