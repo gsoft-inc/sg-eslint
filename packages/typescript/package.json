@@ -17,5 +17,6 @@
         "@sharegate/eslint-config-recommended": "*",
         "@sharegate/eslint-config-sort-imports": "*",
         "@typescript-eslint/eslint-plugin": "*"
-    }
+    },
+    "gitHead": "9c215bee1f5feab66bfdfca74c0708b77517011b"
 }
