@@ -15,6 +15,8 @@ module.exports = {
         "@typescript-eslint/no-shadow": "warn",
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["warn", { "functions": false, "classes": true, "variables": false }],
+        "indent": "off",
+        "@typescript-eslint/indent": ["warn"],
         "@typescript-eslint/member-delimiter-style": ["warn"],
         "@typescript-eslint/consistent-type-definitions": ["warn"],
         "@typescript-eslint/no-implicit-any-catch": ["warn"],
