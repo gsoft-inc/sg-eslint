@@ -1,7 +1,7 @@
 {
-    "name": "@sharegate/eslint-config-next",
+    "name": "@sharegate/eslint-config-nextjs",
     "version": "1.0.0",
-    "description": "Sharegate NextJS ESLint config.",
+    "description": "Sharegate Next.js ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
     "license": "Apache-2.0",
@@ -18,6 +18,5 @@
         "@sharegate/eslint-config-sort-imports": "*",
         "eslint-plugin-jsx-a11y": "*",
         "eslint-config-next": "*"
-    },
-    "gitHead": "9c215bee1f5feab66bfdfca74c0708b77517011b"
+    }
 }

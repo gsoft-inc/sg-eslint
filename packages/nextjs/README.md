@@ -1,6 +1,6 @@
-# eslint-config-react
+# eslint-config-nextjs
 
-Sharegate React ESLint config.
+Sharegate Next.js ESLint config.
 
 ## License
 

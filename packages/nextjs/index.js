@@ -1,7 +1,7 @@
 module.exports = {
     parser: "@babel/eslint-parser",
     plugins: ["next"],
-    extends:["@sharegate/eslint-config-recommended", "@sharegate/eslint-config-sort-imports"],
+    extends:["@sharegate/eslint-config-react"],
     parserOptions: {
         sourceType: "module",
         ecmaFeatures: {
