@@ -14,8 +14,7 @@
         "eslint": "^6 || ^7"
     },
     "dependencies": {
-        "@sharegate/eslint-config-recommended": "*",
-        "@sharegate/eslint-config-sort-imports": "*",
+        "@sharegate/eslint-config-react": "*",
         "eslint-plugin-jsx-a11y": "*",
         "eslint-config-next": "*"
     }
