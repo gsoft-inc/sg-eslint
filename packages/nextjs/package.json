@@ -15,7 +15,6 @@
     },
     "dependencies": {
         "@sharegate/eslint-config-react": "*",
-        "eslint-plugin-jsx-a11y": "*",
         "eslint-config-next": "*"
     }
 }
