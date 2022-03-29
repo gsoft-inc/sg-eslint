@@ -4,7 +4,7 @@ ShareGate shared [ESLint](https://eslint.org) config.
 
 ## Installation
 
-### Non React App
+### Non React or Nextjs App
 
 Install the ShareGate recommended ESLint configuration packages.
 
@@ -54,9 +54,32 @@ module.exports = {
 };
 ```
 
+### Nextjs App
+
+Follow the instructions for the [Non React or Nextjs App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-or-nextjs-app).
+
+Then, install the Nextjs specific configuration packages:
+
+```bash
+npm i -D babel-eslint @sharegate/eslint-config-nextjs
+```
+
+Finally, update your existing `.eslintrc.js` configuration file:
+
+```javascript
+module.exports = {
+    ...
+    extends: [
+        ...
+        "@sharegate/eslint-config-nextjs",
+    ],
+    ...
+};
+```
+
 ### React App
 
-Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
+Follow the instructions for the [Non React or Nextjs App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-or-nextjs-app).
 
 Then, install the React specific configuration packages:
 
@@ -119,6 +142,7 @@ The following core configurations are provided:
 - [recommended](/packages/recommended/index.js): Use this for anything written with the latest ECMAScript specifications.
 - [typescript](/packages/typescript/index.js): Use this for anything written in TypeScript.
 - [react](/packages/react/index.js): Use this for React projects.
+- [nextjs](/packages/nextjs/index.js): Use this for Nextjs projects.
 
 > The **typescript** config extends the **recommended** config, you shouldn't have to include both.
 
