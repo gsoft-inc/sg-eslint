@@ -4,7 +4,7 @@ ShareGate shared [ESLint](https://eslint.org) config.
 
 ## Installation
 
-### Non React or Nextjs App
+### Non React App
 
 Install the ShareGate recommended ESLint configuration packages.
 
@@ -56,7 +56,7 @@ module.exports = {
 
 ### Nextjs App
 
-Follow the instructions for the [Non React or Nextjs App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-or-nextjs-app).
+Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
 
 Then, install the Nextjs specific configuration packages:
 
@@ -77,9 +77,9 @@ module.exports = {
 };
 ```
 
-### React App
+### React App not using Nextjs
 
-Follow the instructions for the [Non React or Nextjs App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-or-nextjs-app).
+Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
 
 Then, install the React specific configuration packages:
 
