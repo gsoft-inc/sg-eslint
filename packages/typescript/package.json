@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-typescript",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "description": "Sharegate TypeScript ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
@@ -14,8 +14,8 @@
         "eslint": "^6 || ^7 || ^8"
     },
     "dependencies": {
-        "@sharegate/eslint-config-recommended": "*",
-        "@sharegate/eslint-config-sort-imports": "*",
+        "@sharegate/eslint-config-recommended": "1.2.0",
+        "@sharegate/eslint-config-sort-imports": "1.1.0",
         "@typescript-eslint/eslint-plugin": "*"
     },
     "gitHead": "9c215bee1f5feab66bfdfca74c0708b77517011b"

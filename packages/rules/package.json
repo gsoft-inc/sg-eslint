@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-plugin-rules",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "description": "Sharegate's custom ESLint plugin.",
     "author": "Groupe Sharegate inc.",
     "license": "Apache-2.0",
