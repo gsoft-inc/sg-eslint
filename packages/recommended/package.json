@@ -10,7 +10,7 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "^6 || ^7"
+        "eslint": "^6 || ^7 || ^8"
     },
     "dependencies": {
         "eslint-plugin-import": "*"
