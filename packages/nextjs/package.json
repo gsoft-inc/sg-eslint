@@ -11,7 +11,7 @@
     },
     "peerDependencies": {
         "@babel/eslint-parser": "*",
-        "eslint": "^6 || ^7"
+        "eslint": "^6 || ^7 || ^8"
     },
     "dependencies": {
         "@sharegate/eslint-config-react": "*",
