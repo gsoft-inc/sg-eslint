@@ -1,6 +1,6 @@
 # eslint-config-nextjs
 
-Sharegate Next.js ESLint config.
+Sharegate Nextjs ESLint config.
 
 ## License
 
