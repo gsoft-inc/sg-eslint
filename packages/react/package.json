@@ -15,7 +15,6 @@
     },
     "dependencies": {
         "@sharegate/eslint-config-recommended": "*",
-        "@sharegate/eslint-config-sort-imports": "*",
         "eslint-plugin-jsx-a11y": "*",
         "eslint-plugin-react": "*",
         "eslint-plugin-react-hooks": "*"
