@@ -53,7 +53,7 @@ module.exports = {
         "react/no-array-index-key": "warn",
         "react/no-access-state-in-setstate": "warn",
         "react/jsx-filename-extension": "warn",
-        "react/jsx-tag-spacing": "warn",
+        "react/jsx-tag-spacing": ["warn", { beforeSelfClosing: "always" }],
         "react/jsx-curly-brace-presence": "warn",
         "react/jsx-max-props-per-line": [
             "warn",
@@ -63,6 +63,7 @@ module.exports = {
             "warn",
             { customValidators: [], skipShapeProps: true }
         ],
+        "react/jsx-curly-spacing": ["warn", { children: true, when: "never" }],
 
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
         "jsx-a11y/accessible-emoji": "warn",
