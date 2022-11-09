@@ -64,14 +64,6 @@ module.exports = {
         "no-unused-vars":"off",
         "@typescript-eslint/no-unused-vars":"warn",
         "no-use-before-define":"off",
-        "@typescript-eslint/no-use-before-define": [
-            "warn",
-            {
-                functions: false,
-                classes: false,
-                variables: false
-            }
-        ],
         "no-useless-constructor":"off",
         "@typescript-eslint/no-useless-constructor":"warn",
         "object-curly-spacing":"off",
@@ -79,6 +71,7 @@ module.exports = {
         "quotes":"off",
         "@typescript-eslint/quotes": ["warn", "double"],
         "semi":"off",
-        "@typescript-eslint/semi": ["warn", "always"]
+        "@typescript-eslint/semi": ["warn", "always"],
+        "@typescript-eslint/no-non-null-assertion": "off"
     }
 };
