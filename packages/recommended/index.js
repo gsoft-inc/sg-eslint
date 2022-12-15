@@ -1,6 +1,13 @@
 module.exports = {
     plugins: ["import"],
     extends: ["eslint:recommended"],
+    parserOptions: {
+        sourceType: "module"
+    },
+    env: {
+        browser: true,
+        es6: true
+    },
     rules: {
         // https://eslint.org/docs/rules
         "max-len": ["warn", { tabWidth: 4, code: 300 }],

@@ -14,10 +14,10 @@ For a native JavaScript project:
 npm i -D eslint @sharegate/eslint-config-recommended
 ```
 
-For a TypeScript project:
+With TypeScript:
 
 ```bash
-npm i -D eslint @sharegate/eslint-config-typescript
+npm i -D eslint @sharegate/eslint-config-typescript @sharegate/eslint-config-recommended
 ```
 
 You can also optionally install the following configuration packages:
@@ -26,31 +26,48 @@ You can also optionally install the following configuration packages:
 - [@sharegate/eslint-config-lodash](/packages/lodash)
 - [@sharegate/eslint-config-strict](/packages/strict)
 
-To install everything:
-
-```bash
-npm i -D eslint @sharegate/eslint-config-recommended @sharegate/eslint-config-sort-imports @sharegate/eslint-config-lodash @sharegate/eslint-config-strict
-```
-
 Then, create a file called `.eslintrc.js` at the root of your project and add the following configurations:
 
 ```javascript
 module.exports = {
     root: true,
     extends: [
-        "@sharegate/eslint-config-recommended", /* (If your project is in native JavaScript) */
-        "@sharegate/eslint-config-typescript", /* (If your project is in TypeScript) */
-        "@sharegate/eslint-config-sort-imports", /* (Optional) */
-        "@sharegate/eslint-config-lodash", /* (Optional) */
-        "@sharegate/eslint-config-strict" /* (Optional) */
+        "@sharegate/eslint-config-recommended",
+        "@sharegate/eslint-config-typescript", /* (If your project is IN TypeScript) */
+        ...
+    ]
+};
+```
+
+### React App not using any framework
+
+Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
+
+Then, install the React specific configuration packages:
+
+```bash
+npm i -D @sharegate/eslint-config-react
+```
+
+If your project is *NOT* using TypeScript:
+
+```bash
+npm i -D babel-eslint
+```
+
+Finally, update your existing `.eslintrc.js` configuration file:
+
+```javascript
+module.exports = {
+    ...
+    parser: "@babel/eslint-parser" /* (If your project is NOT in TypeScript) */
+    extends: [
+        "@sharegate/eslint-config-recommended",
+        "@sharegate/eslint-config-typescript", /* (If your project is IN TypeScript) */
+        "@sharegate/eslint-config-react"
+        ...
     ],
-    parserOptions: {
-        ecmaVersion: 2018
-    },
-    env: {
-        browser: true,
-        es6: true
-    }
+    ...
 };
 ```
 
@@ -61,30 +78,13 @@ Follow the instructions for the [Non React App configuration](https://github.com
 Then, install the Nextjs specific configuration packages:
 
 ```bash
-npm i -D babel-eslint @sharegate/eslint-config-nextjs
+npm i -D @babel/eslint-parser @sharegate/eslint-config-nextjs
 ```
 
-Finally, update your existing `.eslintrc.js` configuration file:
-
-```javascript
-module.exports = {
-    ...
-    extends: [
-        ...
-        "@sharegate/eslint-config-nextjs",
-    ],
-    ...
-};
-```
-
-### React App not using Nextjs
-
-Follow the instructions for the [Non React App configuration](https://github.com/gsoft-inc/sg-eslint/blob/master/README.md#non-react-app).
-
-Then, install the React specific configuration packages:
+If your project is *NOT* using TypeScript:
 
 ```bash
-npm i -D babel-eslint @sharegate/eslint-config-react
+npm i -D babel-eslint
 ```
 
 Finally, update your existing `.eslintrc.js` configuration file:
@@ -92,9 +92,12 @@ Finally, update your existing `.eslintrc.js` configuration file:
 ```javascript
 module.exports = {
     ...
+    parser: "@babel/eslint-parser" /* (If your project is NOT in TypeScript) */
     extends: [
+        "@sharegate/eslint-config-recommended",
+        "@sharegate/eslint-config-typescript", /* (If your project is IN TypeScript) */
+        "@sharegate/eslint-config-nextjs"
         ...
-        "@sharegate/eslint-config-react",
     ],
     ...
 };
