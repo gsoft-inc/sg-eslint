@@ -1,6 +1,6 @@
 module.exports = {
     extends:[
-        "@sharegate/eslint-config-react",
-        "plugin:@next/next/recommended"
+        "plugin:@next/next/recommended",
+        "@sharegate/eslint-config-react"
     ]
 };
