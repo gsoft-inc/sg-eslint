@@ -52,7 +52,7 @@ npm i -D @sharegate/eslint-config-react
 If your project is *NOT* using TypeScript:
 
 ```bash
-npm i -D babel-eslint
+npm i -D @babel/eslint-parser
 ```
 
 Finally, update your existing `.eslintrc.js` configuration file:
@@ -84,7 +84,7 @@ npm i -D @babel/eslint-parser @sharegate/eslint-config-nextjs
 If your project is *NOT* using TypeScript:
 
 ```bash
-npm i -D babel-eslint
+npm i -D @babel/eslint-parser
 ```
 
 Finally, update your existing `.eslintrc.js` configuration file:
