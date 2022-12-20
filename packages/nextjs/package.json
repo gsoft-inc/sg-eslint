@@ -1,6 +1,6 @@
 {
     "name": "@sharegate/eslint-config-nextjs",
-    "version": "2.0.1",
+    "version": "3.0.1",
     "description": "Sharegate Nextjs ESLint config.",
     "repository": "https://github.com/gsoft-inc/sg-eslint",
     "author": "Groupe Sharegate inc.",
@@ -14,6 +14,6 @@
     },
     "dependencies": {
         "@next/eslint-plugin-next": "*",
-        "@sharegate/eslint-config-react": "4.0.1"
+        "@sharegate/eslint-config-react": "5.0.1"
     }
 }
