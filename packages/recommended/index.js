@@ -148,7 +148,7 @@ module.exports = {
         "no-restricted-properties": "warn",
         "no-unneeded-ternary": "warn",
         "no-param-reassign": "warn",
-        "no-duplicate-imports": "warn",
+        "no-duplicate-imports": "off",
         "comma-spacing": ["warn", { "before": false, "after": true }],
         "no-multiple-empty-lines": "warn",
         "keyword-spacing": ["warn", { before: true, after: true }],
@@ -159,10 +159,11 @@ module.exports = {
         "padded-blocks": ["warn", "never"],
         "brace-style":["warn", "1tbs", { "allowSingleLine": true }],
 
-        // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
+        // https://github.com/import-js/eslint-plugin-import/tree/main/docs/rules
         "import/no-amd": "error",
         "import/no-webpack-loader-syntax": "error",
         "import/no-self-import": "error",
-        "import/newline-after-import" : "warn"
+        "import/newline-after-import" : "warn",
+        "import/no-duplicates": "warn"
     }
 };
